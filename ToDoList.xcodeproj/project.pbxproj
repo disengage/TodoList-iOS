@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C48CF002302E9B7009ED1A5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48CEFF2302E9B7009ED1A5 /* DetailViewController.swift */; };
+		1C48CF032302EAC3009ED1A5 /* TodoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48CF012302EAC3009ED1A5 /* TodoCollectionViewCell.swift */; };
+		1C48CF042302EAC3009ED1A5 /* CustomTodoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C48CF022302EAC3009ED1A5 /* CustomTodoCollectionViewCell.xib */; };
+		1C48CF082302EC6C009ED1A5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48CF072302EC6C009ED1A5 /* CollectionViewController.swift */; };
+		1C48CF0A2302EF8F009ED1A5 /* CustomTodoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48CF092302EF8F009ED1A5 /* CustomTodoCollectionViewCell.swift */; };
+		1C48CF0D2302F112009ED1A5 /* Cell1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48CF0C2302F112009ED1A5 /* Cell1CollectionViewCell.swift */; };
+		1C48CF0F2302F11E009ED1A5 /* Cell2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48CF0E2302F11E009ED1A5 /* Cell2CollectionViewCell.swift */; };
+		1C48CF1423030CF3009ED1A5 /* CustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48CF1323030CF3009ED1A5 /* CustomCellViewController.swift */; };
+		1C48CF1623030D5C009ED1A5 /* RegisterCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48CF1523030D5C009ED1A5 /* RegisterCellViewController.swift */; };
+		1C48CF1823031249009ED1A5 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C48CF1723031249009ED1A5 /* Detail.storyboard */; };
 		BF3AD2C322FB1167003881FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3AD2C222FB1167003881FB /* AppDelegate.swift */; };
 		BF3AD2C522FB1167003881FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3AD2C422FB1167003881FB /* ViewController.swift */; };
 		BF3AD2C822FB1167003881FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3AD2C622FB1167003881FB /* Main.storyboard */; };
@@ -36,6 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C48CEFF2302E9B7009ED1A5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1C48CF012302EAC3009ED1A5 /* TodoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCollectionViewCell.swift; sourceTree = "<group>"; };
+		1C48CF022302EAC3009ED1A5 /* CustomTodoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTodoCollectionViewCell.xib; sourceTree = "<group>"; };
+		1C48CF072302EC6C009ED1A5 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		1C48CF092302EF8F009ED1A5 /* CustomTodoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTodoCollectionViewCell.swift; sourceTree = "<group>"; };
+		1C48CF0C2302F112009ED1A5 /* Cell1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell1CollectionViewCell.swift; sourceTree = "<group>"; };
+		1C48CF0E2302F11E009ED1A5 /* Cell2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell2CollectionViewCell.swift; sourceTree = "<group>"; };
+		1C48CF1323030CF3009ED1A5 /* CustomCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellViewController.swift; sourceTree = "<group>"; };
+		1C48CF1523030D5C009ED1A5 /* RegisterCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCellViewController.swift; sourceTree = "<group>"; };
+		1C48CF1723031249009ED1A5 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		BF3AD2BF22FB1167003881FB /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3AD2C222FB1167003881FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF3AD2C422FB1167003881FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +98,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C48CF052302EAC8009ED1A5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1C48CF1223030AEA009ED1A5 /* Custom */,
+				1C48CF0B2302F0FA009ED1A5 /* Others */,
+				1C48CF012302EAC3009ED1A5 /* TodoCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1C48CF062302EC17009ED1A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C48CF072302EC6C009ED1A5 /* CollectionViewController.swift */,
+				1C48CF1523030D5C009ED1A5 /* RegisterCellViewController.swift */,
+				1C48CF1323030CF3009ED1A5 /* CustomCellViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1C48CF0B2302F0FA009ED1A5 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				1C48CF0C2302F112009ED1A5 /* Cell1CollectionViewCell.swift */,
+				1C48CF0E2302F11E009ED1A5 /* Cell2CollectionViewCell.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		1C48CF1223030AEA009ED1A5 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				1C48CF092302EF8F009ED1A5 /* CustomTodoCollectionViewCell.swift */,
+				1C48CF022302EAC3009ED1A5 /* CustomTodoCollectionViewCell.xib */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		BF3AD2B622FB1167003881FB = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +159,14 @@
 		BF3AD2C122FB1167003881FB /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				1C48CF052302EAC8009ED1A5 /* Cells */,
+				1C48CF062302EC17009ED1A5 /* Controllers */,
 				BF3AD2C222FB1167003881FB /* AppDelegate.swift */,
 				BF3AD2C422FB1167003881FB /* ViewController.swift */,
+				1C48CEFF2302E9B7009ED1A5 /* DetailViewController.swift */,
 				BF3AD2F222FB186F003881FB /* TodoItem.swift */,
 				BF3AD2C622FB1167003881FB /* Main.storyboard */,
+				1C48CF1723031249009ED1A5 /* Detail.storyboard */,
 				BF3AD2CB22FB1169003881FB /* LaunchScreen.storyboard */,
 				BF3AD2CE22FB1169003881FB /* Info.plist */,
 				BF3AD2F022FB1378003881FB /* Asset.xcassets */,
@@ -235,8 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C48CF042302EAC3009ED1A5 /* CustomTodoCollectionViewCell.xib in Resources */,
 				BF3AD2F122FB1378003881FB /* Asset.xcassets in Resources */,
 				BF3AD2CD22FB1169003881FB /* LaunchScreen.storyboard in Resources */,
+				1C48CF1823031249009ED1A5 /* Detail.storyboard in Resources */,
 				BF3AD2C822FB1167003881FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,8 +328,16 @@
 			files = (
 				BF3AD2C522FB1167003881FB /* ViewController.swift in Sources */,
 				BF3AD2F322FB186F003881FB /* TodoItem.swift in Sources */,
+				1C48CF1623030D5C009ED1A5 /* RegisterCellViewController.swift in Sources */,
+				1C48CF002302E9B7009ED1A5 /* DetailViewController.swift in Sources */,
 				BF3AD2C322FB1167003881FB /* AppDelegate.swift in Sources */,
+				1C48CF082302EC6C009ED1A5 /* CollectionViewController.swift in Sources */,
+				1C48CF0A2302EF8F009ED1A5 /* CustomTodoCollectionViewCell.swift in Sources */,
+				1C48CF032302EAC3009ED1A5 /* TodoCollectionViewCell.swift in Sources */,
 				BF3AD2F522FB19BE003881FB /* TodoTableViewCell.swift in Sources */,
+				1C48CF0D2302F112009ED1A5 /* Cell1CollectionViewCell.swift in Sources */,
+				1C48CF1423030CF3009ED1A5 /* CustomCellViewController.swift in Sources */,
+				1C48CF0F2302F11E009ED1A5 /* Cell2CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

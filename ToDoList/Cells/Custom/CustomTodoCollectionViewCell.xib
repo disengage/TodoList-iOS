@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomTodoCell" id="gTV-IL-0wX" customClass="CustomTodoCollectionViewCell" customModule="ToDoList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZu-6X-Uzg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nlk-Cv-WgF">
+                                <rect key="frame" x="354" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h07-e1-8p7"/>
+                                    <constraint firstAttribute="width" constant="40" id="tTT-cn-HMe"/>
+                                </constraints>
+                                <state key="normal" image="btn_unchecked"/>
+                                <state key="selected" image="btn_checked"/>
+                                <connections>
+                                    <action selector="checkButtonDidTapped" destination="gTV-IL-0wX" eventType="touchUpInside" id="q6Y-2C-fKs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4V-2N-Bte">
+                                <rect key="frame" x="20" y="15.5" width="314" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="VCU-Cl-dP3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Nlk-Cv-WgF" firstAttribute="leading" secondItem="b4V-2N-Bte" secondAttribute="trailing" constant="20" id="3LZ-4e-H7e"/>
+                            <constraint firstAttribute="trailing" secondItem="Nlk-Cv-WgF" secondAttribute="trailing" constant="20" id="3js-3X-90M"/>
+                            <constraint firstItem="b4V-2N-Bte" firstAttribute="centerY" secondItem="cZu-6X-Uzg" secondAttribute="centerY" id="7iu-tZ-XUn"/>
+                            <constraint firstItem="Nlk-Cv-WgF" firstAttribute="centerY" secondItem="cZu-6X-Uzg" secondAttribute="centerY" id="Eec-M8-TPE"/>
+                            <constraint firstItem="b4V-2N-Bte" firstAttribute="leading" secondItem="cZu-6X-Uzg" secondAttribute="leading" constant="20" id="vLm-cp-9UT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cZu-6X-Uzg" secondAttribute="bottom" id="BvO-bD-Usx"/>
+                <constraint firstItem="cZu-6X-Uzg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GHd-no-RqL"/>
+                <constraint firstAttribute="trailing" secondItem="cZu-6X-Uzg" secondAttribute="trailing" id="NqI-VL-oxa"/>
+                <constraint firstItem="cZu-6X-Uzg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e9e-dp-C4j"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="473" height="111"/>
+            <connections>
+                <outlet property="checkButton" destination="Nlk-Cv-WgF" id="for-B1-pth"/>
+                <outlet property="titleLabel" destination="b4V-2N-Bte" id="x5W-Ut-WUa"/>
+            </connections>
+            <point key="canvasLocation" x="-345" y="-252"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_checked" width="40" height="40"/>
+        <image name="btn_unchecked" width="40" height="40"/>
+    </resources>
+</document>

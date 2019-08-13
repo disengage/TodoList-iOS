@@ -42,6 +42,15 @@ extension ViewController: UITableViewDataSource {
   }
 }
 
+extension ViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+    guard let controller = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return }
+    controller.todoItem = todoItems[indexPath.row]
+    self.navigationController?.pushViewController(controller, animated: true)
+  }
+}
+
 extension ViewController: TodoTableViewCellDelegate {
   func checkButtonDidTapped(cell: TodoTableViewCell) {
     guard let index = tableView.indexPath(for: cell) else {
